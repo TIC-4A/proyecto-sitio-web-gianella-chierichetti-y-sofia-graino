@@ -1,14 +1,74 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Revista XOXO</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="main-container">
+
+        <header class="y2k-header">
+            <a href="revista.pdf" class="logo-link">
+                <h1 class="logo-text">ΧΟΧΟ</h1>
+            </a>
+            <nav class="nav-menu">
+                <button class="nav-button active" data-target="home">Home</button>
+                <button class="nav-button" data-target="gossip">gossip</button>
+                <button class="nav-button" data-target="stickers✨">stickers✨</button>
+                <button class="nav-button" data-target="contact">Contact</button>
+            </nav>
+        </header>
+
+        <main class="content-wrapper">
+
+            <section id="home" class="content-section active">
+                 <div class="image-grid">
+                        <img src="fondo.jfif" alt="Glamour Icon" class="gallery-image">
+                    </div>
+                </div>
+            </section>
+            <section id="gossip" class="content-section">
+                <div class="content-card">
+                    <h2>Gossip Chat</h2>
+                    <p>¡Las redes están on fire y los fans no pueden más! 🔥 En el nuevo documental de Duki, que se estrenó hace poquito, el cantante abre su corazón como nunca antes, y adiviná quién aparece en más de una escena... ¡EMILIA MERNES, OBVIO! 👀💕
+
+Aunque el docu se enfoca en su carrera y crecimiento personal, hay momentazos donde Duki habla de cómo su relación con Emilia fue clave para su estabilidad emocional. Perooo... lo que nadie esperaba es que en una parte MUY íntima, él deja entrever que pasaron por una mini crisis durante la gira. 😱
+
+Los fans se pusieron detectives y empezaron a hilar detalles con las stories de Emilia durante ese mismo periodo: menos fotos juntos, letras medio sad en sus temas nuevos... ¿Fue real o solo una edición estratégica para meterle drama? 🤔
+
+Lo cierto es que ahora están más juntos que nunca, pero el documental dejó a todos con la duda: ¿la pareja más hot del pop argentino estuvo al borde del corte?
+
+Seguiremos informando... 💋👩‍💻</p>
+                </div>
+            </section>
+
+            <section id="stickers✨" class="content-section">
+                <div class="content-card">
+                    <h2>Iconic Stickers</h2>
+                    <div class="image-grid">
+                        <img src="ardilla.jfif" alt="Glamour Icon" class="gallery-image">
+                        <img src="regina.jfif" alt="Pop Culture Icon" class="gallery-image">
+                        <img src="bratz.jfif" alt="Style Icon" class="gallery-image">
+                        <img src="Hannah.jfif" alt="Shine Icon" class="gallery-image">
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section">
+                <div class="content-card">
+                    <h2>Contáctanos</h2>
+                    <p>¿Tienes alguna pregunta, sugerencia o solo quieres saludar? ¡Estamos aquí para ti!</p>
+                    <a href="mailto:info@xoxo.com" class="contact-link">Envíanos un Email</a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
