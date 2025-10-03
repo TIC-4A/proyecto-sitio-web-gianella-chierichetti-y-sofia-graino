@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOXO Magazine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="XOXO.pdf" target="_blank" class="logo">X.O.X.O</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-button active" data-target="gossip-chat">Gossip Chat</a></li>
+                <li><a href="#" class="nav-button" data-target="games">Games</a></li>
+                <li><a href="#" class="nav-button" data-target="stickers">Stickers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gossip-chat" class="content-section active">
+            <h2>Gossip Chat 💬</h2>
+            <div class="chat-container">
+                <div class="message received">
+                    <p>¡Hola! Bienvenida al chat de XOXO. Aquí puedes poner las últimas noticias o artículos.</p>
+                    <span>- Ayer 20:15</span>
+                </div>
+                <div class="message sent">
+                    <p>¡Genial! Me encanta la idea. Es como tener nuestra propia revista interactiva.</p>
+                    <span>- Ayer 20:16</span>
+                </div>
+                <div class="message received">
+                    <p>Exacto. [cite_start]El artículo sobre belleza y redes sociales del PDF es muy interesante, podríamos comentarlo aquí. [cite: 256, 258]</p>
+                    <span>- Ayer 20:18</span>
+                </div>
+                 <div class="message sent">
+                    [cite_start]<p>Sí, y la entrevista a Nacho Castañares también! [cite: 196]</p>
+                    <span>- Ayer 20:20</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="content-section">
+            <h2>Games 🎮</h2>
+            <div class="grid-container">
+                <a href="URL_DEL_JUEGO_1" target="_blank" class="grid-item">
+                    <div class="game-placeholder">
+                        <img src="https://via.placeholder.com/150/FFC0CB/000000?Text=Juego+1" alt="Juego 1">
+                    </div>
+                    <h3>Nombre del Juego 1</h3>
+                </a>
+
+                <a href="URL_DEL_JUEGO_2" target="_blank" class="grid-item">
+                    <div class="game-placeholder">
+                        <img src="https://via.placeholder.com/150/FFC0CB/000000?Text=Juego+2" alt="Juego 2">
+                    </div>
+                    <h3>Nombre del Juego 2</h3>
+                </a>
+                
+                <a href="URL_DEL_JUEGO_3" target="_blank" class="grid-item">
+                     <div class="game-placeholder">
+                        <img src="https://via.placeholder.com/150/FFC0CB/000000?Text=Juego+3" alt="Juego 3">
+                    </div>
+                    <h3>Nombre del Juego 3</h3>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="stickers" class="content-section">
+            <h2>Stickers ✨</h2>
+            <div class="grid-container">
+                <div class="grid-item sticker-item">
+                    <img src="https://via.placeholder.com/150/FFC0CB/000000?Text=Sticker+1" alt="Sticker de corazón">
+                </div>
+                <div class="grid-item sticker-item">
+                     <img src="https://via.placeholder.com/150/FFC0CB/000000?Text=Sticker+2" alt="Sticker de estrella">
+                </div>
+                <div class="grid-item sticker-item">
+                     <img src="https://via.placeholder.com/150/FFC0CB/000000?Text=Sticker+3" alt="Sticker de círculo">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
