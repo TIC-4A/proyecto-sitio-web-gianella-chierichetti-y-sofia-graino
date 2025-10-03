@@ -1,0 +1,196 @@
+/* Variables para una paleta más chic y sutil */
+:root {
+    --chic-pink: #FFB6C1;    /* Light Pink */
+    --chic-magenta: #DDA0DD;   /* Plum/Orchid */
+    --chic-purple: #9370DB;    /* Medium Purple */
+    --chic-silver: #E0E0E0;    /* Soft Silver */
+    --chic-text-dark: #333;
+    --chic-text-light: #fff;
+    --card-bg: rgba(255, 255, 255, 0.85); /* Fondo de tarjeta semi-transparente */
+}
+
+/* Estilos Generales y Fondo de Brillo */
+body {
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    padding: 0;
+    color: var(--chic-text-dark);
+    text-align: center;
+    background-color: var(--chic-silver);
+    background-image: 
+        radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    background-attachment: fixed; /* Mantiene el brillo fijo */
+}
+
+.main-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header y Navegación */
+.y2k-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: var(--chic-purple);
+    text-shadow: 2px 2px var(--chic-magenta);
+    transition: transform 0.3s ease;
+}
+
+.logo-text:hover {
+    transform: scale(1.05) rotate(-3deg);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    font-family: 'Orbitron', sans-serif;
+    background-color: transparent;
+    border: 2px solid var(--chic-magenta);
+    color: var(--chic-magenta);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.nav-button:hover {
+    background-color: var(--chic-magenta);
+    color: var(--chic-text-light);
+    box-shadow: 0 0 15px rgba(221, 160, 221, 0.7);
+}
+
+.nav-button.active {
+    background-color: var(--chic-purple);
+    color: var(--chic-text-light);
+    border-color: var(--chic-purple);
+    box-shadow: 0 0 20px rgba(147, 112, 219, 0.9);
+}
+
+/* Contenido Principal y Secciones */
+.content-wrapper {
+    position: relative;
+    padding-top: 20px;
+}
+
+.content-section {
+    display: none; /* Por defecto, todas las secciones están ocultas */
+    animation: fadeIn 1s ease-out; /* Animación de entrada */
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+.content-section.active {
+    display: block; /* Muestra solo la sección activa */
+}
+
+.content-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 40px;
+    border: 3px solid var(--chic-pink);
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--chic-purple);
+    text-shadow: 1px 1px var(--chic-magenta);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--chic-text-dark);
+}
+
+/* Galería */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid var(--chic-purple);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 8px 20px rgba(221, 160, 221, 0.8);
+}
+
+/* Enlace de Contacto */
+.contact-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: var(--chic-pink);
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(255, 182, 193, 0.5);
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: var(--chic-magenta);
+    transform: translateY(-3px);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .y2k-header {
+        flex-direction: column;
+    }
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-button {
+        width: 100%;
+    }
+}
